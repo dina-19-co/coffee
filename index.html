@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم دينا للمشويات | Dina's Grills Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd07xaSaE8tkxJgR7yz_8Hkb7t9JKH3GmULA&s" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+<header>
+    <div class="header-utilities">
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="lang-toggle" id="langToggle" data-lang="en">English</button>
+    </div>
+
+    <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+            <h2 class="logo-text" data-key="restaurantName">مشووياتو🐟</h2>
+        </a>
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#Home" class="nav-link" data-key="home">الرئيسية</a></li>
+            <li class="nav-item"><a href="#About" class="nav-link" data-key="about">عنا</a></li>
+            <li class="nav-item"><a href="#Menu" class="nav-link" data-key="menu">القائمة</a></li>
+            <li class="nav-item"><a href="#Testimonials" class="nav-link" data-key="testimonials">آراء العملاء</a></li>
+            <li class="nav-item"><a href="#Gallery" class="nav-link" data-key="gallery">المعرض</a></li>
+            <li class="nav-item"><a href="#Contact" class="nav-link" data-key="contact">تواصل معنا</a></li>
+            <button id="menu-close-button" class="fas fa-times"></button>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="home fade-in" id="Home">
+        <div class="home-content">
+            <h1 data-key="homeTitle">مطعم دينا للمشويات اللذيذة 🐟</h1>
+            <p data-key="homePara1">
+                مرحبًا بك في مطعم دينا، حيث المذاق الأصيل يلتقي بالجودة الفاخرة!
+                نُقدّم لك أشهى أطباق المشويات والأسماك الطازجة بطعم لا يُنسى.
+            </p>
+            <h2 data-key="homePara2">
+                نختار مكوناتنا بعناية يوميًا لضمان تجربة صحية ولذيذة لكل أفراد الأسرة.<br>
+                جو دافئ وخدمة راقية هتخليك تحس كأنك في بيتك.<br>
+                اطلب دلوقتي أو زورنا واكتشف عالم من النكهات الشرقية اللي تستاهل التجربة!
+            </h2>
+            <img src="https://cdn.saudigates.net/wp-content/uploads/2023/01/%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D8%B3%D9%85%D9%83-%D9%81%D9%8A-%D9%85%D9%83%D8%A9.jpg" class="img3" alt="Grilled Fish Dish">
+        </div>
+    </section>
+
+    ---
+
+    <section class="about fade-in" id="About">
+        <div class="about-content">
+            <p class="section-subtitle" data-key="aboutUsSectionTitle">عنا</p><br>
+            <h1 class="section-title-about" data-key="aboutUsText">
+                في مطعم دينا، بنقدملك أكل شرقي أصيل بطعم يفضل في بالك.
+                من المشويات اللي على أصولها، لحد الأسماك الطازة... كل حاجة معمولة بحب ومن قلب البيت.
+                جو دافئ، خدمة راقية، ونكهة ما تتنسيش.
+                زورنا، وهتلاقي مكانك المفضل ❤️
+            </h1>
+            <img src="img1.png" class="img3" alt="Restaurant interior">
+            <div class="action-buttons">
+                <button id="buyBtn" data-key="orderButton">اطلب الآن</button>
+                <button id="infoBtn" data-key="inquireButton">استفسر</button>
+            </div>
+            <div class="social-links">
+                <a href="#" class="link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section class="Testimonials fade-in" id="Testimonials">
+        <h2 class="section-title" data-key="testimonialsTitle">آراء عملائنا</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide tes">
+                    <img src="img3.png" class="test" alt="Client 1">
+                    <p data-key="testimonial1">"الأكل لذيذ جدًا والنظافة ممتازة 👌"</p>
+                    <span class="client-name" data-key="client1Name">احمد – القاهرة</span>
+                </div>
+                <div class="swiper-slide tes">
+                    <img src="img2 (1).png" class="test" alt="Client 2">
+                    <p data-key="testimonial2">"أحلى وجبة كلتها من زمان، ربنا يباركلكم 💖"</p>
+                    <span class="client-name" data-key="client2Name">منه – طنطا</span>
+                </div>
+                <div class="swiper-slide tes">
+                    <img src="img4.png" class="test" alt="Client 3">
+                    <p data-key="testimonial3">"التعامل راقي والطعم روعة.. أكيد هكرر الطلب 🥰"</p>
+                    <span class="client-name" data-key="client3Name">هاجر – الجيزة</span>
+                </div>
+                <div class="swiper-slide tes">
+                    <img src="img6.png" class="test" alt="Client 4">
+                    <p data-key="testimonial4">"كنت مترددة أطلب، بس بصراحة التجربة تستاهل 🌟"</p>
+                    <span class="client-name" data-key="client4Name">محمد – الإسكندرية</span>
+                </div>
+                <div class="swiper-slide tes">
+                    <img src="img5.png" class="test" alt="Client 5">
+                    <p data-key="testimonial5">"مذاق خرافي وسرعة توصيل رهيبة.. أنصح بيه بقوة 🔥"</p>
+                    <span class="client-name" data-key="client5Name">حوده – الزقازيق</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    ---
+
+    <section class="gallery fade-in" id="Gallery">
+        <h2 class="section-title" data-key="galleryTitle">معرض الصور</h2>
+        <div class="gallery-grid">
+            <img src="https://cdn.arabsstock.com/uploads/images/109569/a-dish-of-grilled-fish-thumbnail-109569.webp" class="im1" alt="Grilled Fish">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcU4j3-suixiqHrNpYanTDYwhCacqLaUrT-w&s" class="im2" alt="Mixed Grills">
+            <img src="https://img.lovepik.com/photo/60161/6465.jpg_wh860.jpg" class="im3" alt="Chicken Grill">
+            <img src="https://www.agrinewz.com/content/upload/Large/920241816460424163890.jpg" class="im4" alt="Grilled Kebab">
+            <img src="https://cdn.saudigates.net/wp-content/uploads/2022/08/%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D9%85%D8%B4%D9%88%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%AF%D8%A9.jpg" class="im5" alt="Restaurant Ambience">
+            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9480dfc3-c3ce-4339-8f56-b54b8ad6317a.jpg" class="im8" alt="Grilled Meat">
+            <img src="https://images.deliveryhero.io/image/talabat/Menuitems/%D9%83%D9%8A%D9%84%D9%88_%D8%B3%D9%85%D9%83_%D8%A7%D8%B1%D8%AC%D9%86%D8%AA%D9%8A%D9%86%D9%8A_%D9%85%D9%82%D9%84%D9%8A638211396727470913.jpg" class="im7" alt="Fried Argentine Fish">
+            <img src="https://aqaryamasr.com/blog/wp-content/uploads/2024/02/3-26.jpg" class="im10" alt="Restaurant Dining Area">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjBl9aXemEYpmkXEqyiG1XiIlCgqWebbe0CQ&s" class="im11" alt="Various Grills">
+        </div>
+    </section>
+
+    ---
+
+    <section class="contact fade-in" id="Contact">
+        <h2 class="section-title" data-key="contactTitle">تواصل معنا</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p data-key="contactAddress">العنوان: 123 شارع المطاعم، حي النكهات، القاهرة، مصر</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p data-key="contactPhone">الهاتف: +20 100 123 4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p data-key="contactEmail">البريد الإلكتروني: info@dinarestaurant.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p data-key="contactHours">ساعات العمل: يومياً من 12:00 ظهراً - 1:00 صباحاً</p>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1729.8732000000001!2d31.2335!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584067980e0719%3A0xc07f6c6d2c49c71a!2z2YPZhNiq2Kgg2YXYsdmD2Kkg2KfZhNiy2YLYp9ix!5e0!3m2!1sar!2seg!4v1700000000000!5m2!1sar!2seg"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p data-key="footerText">© 2025 مطعم دينا للمشويات. جميع الحقوق محفوظة.</p>
+        <div class="footer-links">
+            <a href="#" data-key="privacyPolicy">سياسة الخصوصية</a>
+            <a href="#" data-key="termsOfService">شروط الخدمة</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
